@@ -13,8 +13,9 @@ debug() {
 }
 
 debug_variable() {
-  debug "$1=$(eval echo \$${1})"
-  true
+  local var="${1:-}"
+  local msg="$var=$(eval echo \$${var})"
+  debug "${msg}"
 }
 
 die() {
