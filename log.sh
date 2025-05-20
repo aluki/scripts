@@ -6,7 +6,7 @@ log() {
 }
 
 debug() {
-  if [ -n "${DEBUG}" ]
+  if [ -n "${DEBUG:-}" ]
   then
     log "$@"
   fi
