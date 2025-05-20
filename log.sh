@@ -1,7 +1,8 @@
 #! /usr/bin/env sh
 
 log() {
-  jo time="$(date -uIseconds)" msg="$@"
+  local msg="$@"
+  jo time="$(date -uIseconds)" msg="${msg}"
 }
 
 debug() {
