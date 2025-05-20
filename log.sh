@@ -1,7 +1,5 @@
 #! /usr/bin/env sh
 
-set -eu
-
 log() {
   jo time="$(date -uIseconds)" msg="$@"
 }
